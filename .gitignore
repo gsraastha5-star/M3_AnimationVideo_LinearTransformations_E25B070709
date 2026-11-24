@@ -1,0 +1,20 @@
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Manim intermediate partial movie files and tex cache
+media/videos/**/partial_movie_files/
+media/typst_cache/
+media/Tex/
+media/texts/
+media/concat_list.txt
+
+# OS Specific
+.DS_Store
+Thumbs.db
