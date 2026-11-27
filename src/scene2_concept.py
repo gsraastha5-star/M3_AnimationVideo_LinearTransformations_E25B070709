@@ -68,7 +68,7 @@ class Scene2Concept(Scene):
             run_time=1.8,
             lag_ratio=0.25
         )
-        self.wait(4.0)
+        self.wait(6.5)
 
         # -------------------------------------------------------------
         # Part 2: Two Linearity Properties
@@ -106,10 +106,10 @@ class Scene2Concept(Scene):
         p2_group = VGroup(p2_box, p2_label, p2_eq, p2_note)
 
         self.play(FadeIn(p1_group, shift=RIGHT * 0.3), run_time=1.4)
-        self.wait(4.5)
+        self.wait(6.0)
 
         self.play(FadeIn(p2_group, shift=RIGHT * 0.3), run_time=1.4)
-        self.wait(4.5)
+        self.wait(6.0)
 
         # Bottom punchline banner
         takeaway_bg = Rectangle(width=11.2, height=0.65, fill_color="#0F172A", fill_opacity=0.95, stroke_color="#64748B", stroke_width=1).to_edge(DOWN, buff=0.25)
@@ -123,7 +123,7 @@ class Scene2Concept(Scene):
         takeaway_group = VGroup(takeaway_bg, takeaway_txt)
 
         self.play(FadeIn(takeaway_group, shift=UP * 0.25), run_time=1.2)
-        self.wait(5.0)
+        self.wait(7.2)
 
         # Transition out
         self.play(

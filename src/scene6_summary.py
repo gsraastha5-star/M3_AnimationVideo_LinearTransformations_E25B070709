@@ -31,7 +31,7 @@ class Scene6Summary(Scene):
         ).next_to(header, DOWN, buff=0.12)
 
         self.play(FadeIn(header, shift=DOWN * 0.2), FadeIn(sub_header, shift=DOWN * 0.15), run_time=1.2)
-        self.wait(1.0)
+        self.wait(0.5)
 
         # -------------------------------------------------------------
         # 1. Three Main Takeaways (Cards)
@@ -57,11 +57,11 @@ class Scene6Summary(Scene):
         card3 = VGroup(t3_box, t3_title, t3_desc)
 
         self.play(FadeIn(card1, shift=UP * 0.25), run_time=1.2)
-        self.wait(2.5)
+        self.wait(1.2)
         self.play(FadeIn(card2, shift=UP * 0.25), run_time=1.2)
-        self.wait(2.5)
+        self.wait(1.2)
         self.play(FadeIn(card3, shift=UP * 0.25), run_time=1.2)
-        self.wait(4.0)
+        self.wait(2.0)
 
         # -------------------------------------------------------------
         # 2. Iconic Punchline Card
@@ -102,7 +102,7 @@ class Scene6Summary(Scene):
 
         quote_grp = VGroup(quote_box, quote_text1, quote_text2)
         self.play(FadeIn(quote_grp, scale=0.92), run_time=1.8)
-        self.wait(5.0)
+        self.wait(3.0)
 
         # -------------------------------------------------------------
         # 3. Credits & AI Disclosure
@@ -132,7 +132,7 @@ class Scene6Summary(Scene):
         cred_grp = VGroup(credits_title, cred_box, c_line1, c_line2, c_line3, c_line4, c_div, c_line5, c_line6)
 
         self.play(FadeIn(cred_grp, shift=UP * 0.25), run_time=1.8)
-        self.wait(6.0)
+        self.wait(4.133)
 
         self.play(FadeOut(cred_grp), run_time=1.5)
         self.wait(0.5)

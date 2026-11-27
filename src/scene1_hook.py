@@ -173,7 +173,7 @@ class Scene1Hook(Scene):
             FadeIn(badge, shift=UP * 0.2),
             run_time=2.2
         )
-        self.wait(3.5)
+        self.wait(2.6)
 
         # Transition out
         self.play(

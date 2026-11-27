@@ -60,7 +60,7 @@ class Scene4WorkedExample(Scene):
             FadeIn(decomp_txt),
             run_time=2.0
         )
-        self.wait(1.5)
+        self.wait(1.0)
 
         self.play(
             GrowArrow(v_arrow),
@@ -70,13 +70,13 @@ class Scene4WorkedExample(Scene):
             FadeOut(decomp_txt),
             run_time=1.8
         )
-        self.wait(2.0)
+        self.wait(1.2)
 
         # Projection lines showing (1, 1) coordinates
         proj_x = DashedLine(plane.c2p(1, 0), plane.c2p(1, 1), color="#64748B", stroke_width=1.5)
         proj_y = DashedLine(plane.c2p(0, 1), plane.c2p(1, 1), color="#64748B", stroke_width=1.5)
         self.play(Create(proj_x), Create(proj_y), run_time=1.2)
-        self.wait(1.5)
+        self.wait(1.0)
 
         # 2. Algebraic Calculation Board on Left (properly proportioned)
         calc_box = RoundedRectangle(
@@ -103,7 +103,7 @@ class Scene4WorkedExample(Scene):
         ).next_to(calc_div, DOWN, buff=0.22)
         
         self.play(FadeIn(step1, shift=DOWN * 0.15), run_time=1.2)
-        self.wait(3.5)
+        self.wait(2.5)
 
         # Step 2: Dot Products Expanded (Explicit multiplication)
         step2 = typst_math(
@@ -115,7 +115,7 @@ class Scene4WorkedExample(Scene):
         step2_annot = Text("Row × Column Dot Products", font="Helvetica", font_size=11, color=COLOR_TEXT_SECONDARY).next_to(step2, DOWN, buff=0.08)
 
         self.play(FadeIn(step2, shift=DOWN * 0.15), FadeIn(step2_annot), run_time=1.5)
-        self.wait(4.5)
+        self.wait(3.5)
 
         # Step 3: Arithmetic addition
         step3 = typst_math(
@@ -125,7 +125,7 @@ class Scene4WorkedExample(Scene):
         ).next_to(step2_annot, DOWN, buff=0.22)
 
         self.play(FadeIn(step3, shift=DOWN * 0.15), run_time=1.2)
-        self.wait(3.5)
+        self.wait(2.8)
 
         # Step 4: Final Vector Result
         step4 = typst_math(
@@ -136,7 +136,7 @@ class Scene4WorkedExample(Scene):
         res_box = SurroundingRectangle(step4, color=COLOR_AV, buff=0.1, stroke_width=1.8)
 
         self.play(FadeIn(step4, shift=DOWN * 0.15), Create(res_box), run_time=1.5)
-        self.wait(4.0)
+        self.wait(3.0)
 
         # 3. Geometric Transformation of the Vector
         trans_v_arrow = Arrow(
@@ -162,7 +162,7 @@ class Scene4WorkedExample(Scene):
             run_time=4.0,
             rate_func=smooth
         )
-        self.wait(3.5)
+        self.wait(3.0)
 
         # 4. Geometric Basis Vector Addition Breakdown
         te1_arrow = Arrow(
@@ -190,7 +190,7 @@ class Scene4WorkedExample(Scene):
             FadeIn(te1_txt),
             run_time=1.8
         )
-        self.wait(2.0)
+        self.wait(1.5)
 
         self.play(
             GrowArrow(te2_tip_to_tail),

@@ -1,0 +1,6 @@
+file '/Users/aasthamusale/Desktop/math_video/media/audio/scene1_synced.mp3'
+file '/Users/aasthamusale/Desktop/math_video/media/audio/scene2_synced.mp3'
+file '/Users/aasthamusale/Desktop/math_video/media/audio/scene3_synced.mp3'
+file '/Users/aasthamusale/Desktop/math_video/media/audio/scene4_synced.mp3'
+file '/Users/aasthamusale/Desktop/math_video/media/audio/scene5_synced.mp3'
+file '/Users/aasthamusale/Desktop/math_video/media/audio/scene6_synced.mp3'

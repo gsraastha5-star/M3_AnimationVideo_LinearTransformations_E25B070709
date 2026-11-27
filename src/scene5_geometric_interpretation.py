@@ -56,7 +56,7 @@ class Scene5GeometricInterpretation(Scene):
             FadeIn(p2), FadeIn(l2),
             run_time=2.0
         )
-        self.wait(2.0)
+        self.wait(1.2)
 
         # 2. Right Side: Analytical Panels
         info_box = RoundedRectangle(
@@ -85,7 +85,7 @@ class Scene5GeometricInterpretation(Scene):
         ).next_to(info_div, DOWN, buff=0.2)
         
         self.play(FadeIn(eq_sys, shift=DOWN * 0.15), run_time=1.5)
-        self.wait(3.5)
+        self.wait(2.5)
 
         # Observation 1: Vertical invariance
         obs1_box = RoundedRectangle(corner_radius=0.1, width=5.0, height=0.95, fill_color="#1E293B", fill_opacity=0.9, stroke_color="#2ECC71", stroke_width=1.2).next_to(eq_sys, DOWN, buff=0.2)
@@ -94,7 +94,7 @@ class Scene5GeometricInterpretation(Scene):
         obs1_grp = VGroup(obs1_box, obs1_t1, obs1_t2)
 
         self.play(FadeIn(obs1_grp, shift=RIGHT * 0.2), run_time=1.2)
-        self.wait(3.0)
+        self.wait(2.0)
 
         # Observation 2: Horizontal Shear
         obs2_box = RoundedRectangle(corner_radius=0.1, width=5.0, height=1.05, fill_color="#1E293B", fill_opacity=0.9, stroke_color="#F1C40F", stroke_width=1.2).next_to(obs1_box, DOWN, buff=0.16)
@@ -103,7 +103,7 @@ class Scene5GeometricInterpretation(Scene):
         obs2_grp = VGroup(obs2_box, obs2_t1, obs2_t2)
 
         self.play(FadeIn(obs2_grp, shift=RIGHT * 0.2), run_time=1.2)
-        self.wait(3.5)
+        self.wait(2.3)
 
         # 3. Animate the shear on the plane:
         tp0 = Dot(plane.c2p(2, 0), color="#38BDF8", radius=0.08)
@@ -130,7 +130,7 @@ class Scene5GeometricInterpretation(Scene):
             run_time=4.5,
             rate_func=smooth
         )
-        self.wait(4.5)
+        self.wait(3.0)
 
         # 4. Summary Invariant Callout
         inv_banner = Rectangle(width=11.5, height=0.65, fill_color="#0F172A", fill_opacity=0.96, stroke_color=COLOR_TEXT_HIGHLIGHT, stroke_width=1.2).to_edge(DOWN, buff=0.2)
@@ -144,7 +144,7 @@ class Scene5GeometricInterpretation(Scene):
         inv_grp = VGroup(inv_banner, inv_text)
 
         self.play(FadeIn(inv_grp, shift=UP * 0.2), run_time=1.2)
-        self.wait(5.0)
+        self.wait(3.6)
 
         # Transition out
         self.play(

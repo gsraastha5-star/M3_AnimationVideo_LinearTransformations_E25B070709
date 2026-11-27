@@ -182,7 +182,7 @@ class Scene3VisualIntuition(Scene):
             run_time=5.0,
             rate_func=smooth
         )
-        self.wait(4.0)
+        self.wait(4.8)
 
         # 6. Explanatory Callout Banner
         callout_box = RoundedRectangle(
